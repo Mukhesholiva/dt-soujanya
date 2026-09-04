@@ -15,21 +15,21 @@
    email, Instagram and photo.
    ============================================================ */
 :root{
-  --cream:#FAF6EE;
-  --cream-2:#F3EDE0;
-  --ink:#20302A;
-  --ink-soft:#4C5B53;
-  --green:#2C523F;
-  --green-deep:#1E3B2D;
-  --green-tint:#E4EDE5;
-  --terra:#D96E43;
-  --terra-soft:#F6DFD2;
+  --cream:#FBF8FD;
+  --cream-2:#F3ECF8;
+  --ink:#2C2135;
+  --ink-soft:#5D5168;
+  --violet:#6C4E9B;
+  --violet-deep:#3C2B5A;
+  --violet-tint:#EEE5F7;
+  --pink:#D9569B;
+  --pink-soft:#F9DDED;
   --gold:#C9A24B;
-  --line:#E3DACA;
+  --line:#E6DCEF;
   --card:#FFFFFF;
   --radius:18px;
-  --shadow:0 10px 30px -12px rgba(32,48,42,.14);
-  --shadow-lg:0 24px 60px -20px rgba(32,48,42,.22);
+  --shadow:0 10px 30px -12px rgba(60,43,90,.14);
+  --shadow-lg:0 24px 60px -20px rgba(60,43,90,.22);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:130px}
@@ -43,7 +43,7 @@ body{
 /* subtle grain */
 body::before{
   content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.35;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.2 0 0 0 0 0.25 0 0 0 0 0.2 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.3 0 0 0 0 0.2 0 0 0 0 0.35 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 h1,h2,h3,.serif{font-family:'Fraunces',serif}
 a{color:inherit;text-decoration:none}
@@ -53,28 +53,28 @@ img{max-width:100%}
 /* ---------- top bar ---------- */
 .topbar{
   position:sticky;top:0;z-index:50;
-  background:rgba(250,246,238,.88);backdrop-filter:blur(12px);
+  background:rgba(251,248,253,.88);backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line);
 }
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:var(--green-deep)}
-.brand .leaf{width:30px;height:30px;border-radius:50% 50% 50% 4px;background:linear-gradient(135deg,var(--green),#6FA07F);display:grid;place-items:center;color:#fff;font-size:.85rem;transform:rotate(-8deg)}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:var(--violet-deep)}
+.brand .leaf{width:30px;height:30px;border-radius:50% 50% 50% 4px;background:linear-gradient(135deg,var(--violet),#D786B8);display:grid;place-items:center;color:#fff;font-size:.85rem;transform:rotate(-8deg)}
 .top-cta{
-  display:inline-block;background:var(--green);color:#fff;font-weight:700;font-size:.9rem;
+  display:inline-block;background:var(--violet);color:#fff;font-weight:700;font-size:.9rem;
   padding:10px 20px;border-radius:999px;transition:.25s;
 }
-.top-cta:hover{background:var(--green-deep);transform:translateY(-1px)}
+.top-cta:hover{background:var(--violet-deep);transform:translateY(-1px)}
 
 /* ---------- hero ---------- */
 .hero{position:relative;overflow:hidden;padding:64px 0 48px;background:
-  radial-gradient(700px 380px at 85% -10%, var(--green-tint) 0%, transparent 65%),
-  radial-gradient(520px 340px at -8% 30%, var(--terra-soft) 0%, transparent 60%);
+  radial-gradient(700px 380px at 85% -10%, var(--violet-tint) 0%, transparent 65%),
+  radial-gradient(520px 340px at -8% 30%, var(--pink-soft) 0%, transparent 60%);
 }
 .hero .wrap{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center}
 .portrait{position:relative;width:230px}
 .portrait .blob{
   position:absolute;inset:-16px;border-radius:53% 47% 44% 56%/49% 55% 45% 51%;
-  background:linear-gradient(140deg,var(--green-tint),#fff 60%);
+  background:linear-gradient(140deg,var(--violet-tint),#fff 60%);
   box-shadow:var(--shadow-lg);animation:blob 9s ease-in-out infinite alternate;
 }
 @keyframes blob{
@@ -84,7 +84,7 @@ img{max-width:100%}
 .portrait .photo{
   position:relative;width:230px;height:230px;border-radius:50%;overflow:hidden;
   border:5px solid #fff;box-shadow:var(--shadow);
-  background:linear-gradient(160deg,var(--green) 0%,#4E7A5F 100%);
+  background:linear-gradient(160deg,var(--violet) 0%,#A177C9 100%);
   display:grid;place-items:center;color:#fff;
   font-family:'Fraunces',serif;font-size:4.2rem;font-weight:600;letter-spacing:.02em;
 }
@@ -92,12 +92,12 @@ img{max-width:100%}
    <img class="photo" src="soujanya.jpg" alt="Dt. Soujanya" style="object-fit:cover"> */
 .verified{
   position:absolute;bottom:10px;right:2px;background:#fff;border:1px solid var(--line);
-  border-radius:999px;padding:6px 12px;font-size:.72rem;font-weight:700;color:var(--green);
+  border-radius:999px;padding:6px 12px;font-size:.72rem;font-weight:700;color:var(--violet);
   display:flex;gap:5px;align-items:center;box-shadow:var(--shadow);
 }
 .verified svg{width:13px;height:13px}
-.hero h1{font-size:clamp(2.2rem,4.6vw,3.4rem);font-weight:600;color:var(--green-deep);line-height:1.12;letter-spacing:-.01em}
-.hero h1 em{font-style:italic;color:var(--terra)}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.4rem);font-weight:600;color:var(--violet-deep);line-height:1.12;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--pink)}
 .hero .quals{margin-top:10px;font-size:1.05rem;color:var(--ink-soft);font-weight:500}
 .hero .quals strong{color:var(--ink)}
 .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
@@ -105,35 +105,35 @@ img{max-width:100%}
   display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);
   border-radius:999px;padding:7px 15px;font-size:.85rem;font-weight:600;color:var(--ink-soft);
 }
-.badge .dot{width:7px;height:7px;border-radius:50%;background:var(--terra)}
+.badge .dot{width:7px;height:7px;border-radius:50%;background:var(--pink)}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
 .btn{
   display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:.98rem;
   padding:14px 28px;border-radius:999px;transition:.25s;cursor:pointer;border:none;
 }
-.btn-solid{background:var(--terra);color:#fff;box-shadow:0 8px 22px -8px rgba(217,110,67,.55)}
-.btn-solid:hover{background:#C05A31;transform:translateY(-2px)}
-.btn-ghost{background:transparent;color:var(--green);border:2px solid var(--green)}
-.btn-ghost:hover{background:var(--green);color:#fff}
+.btn-solid{background:var(--pink);color:#fff;box-shadow:0 8px 22px -8px rgba(217,86,155,.55)}
+.btn-solid:hover{background:#BE4384;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--violet);border:2px solid var(--violet)}
+.btn-ghost:hover{background:var(--violet);color:#fff}
 
 /* stat strip */
 .stats{border-block:1px solid var(--line);background:var(--cream-2)}
 .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center}
 .stat{padding:22px 12px;border-left:1px solid var(--line)}
 .stat:first-child{border-left:none}
-.stat b{display:block;font-family:'Fraunces',serif;font-size:1.7rem;font-weight:600;color:var(--green-deep)}
+.stat b{display:block;font-family:'Fraunces',serif;font-size:1.7rem;font-weight:600;color:var(--violet-deep)}
 .stat span{font-size:.82rem;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
 
 /* ---------- section nav (Practo-style tabs) ---------- */
-.tabs{position:sticky;top:64px;z-index:40;background:rgba(250,246,238,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.tabs{position:sticky;top:64px;z-index:40;background:rgba(251,248,253,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .tabs .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
 .tabs .wrap::-webkit-scrollbar{display:none}
 .tab{
   padding:15px 18px;font-weight:700;font-size:.92rem;color:var(--ink-soft);white-space:nowrap;
   border-bottom:3px solid transparent;transition:.2s;
 }
-.tab:hover{color:var(--green)}
-.tab.active{color:var(--green-deep);border-bottom-color:var(--terra)}
+.tab:hover{color:var(--violet)}
+.tab.active{color:var(--violet-deep);border-bottom-color:var(--pink)}
 
 /* ---------- main layout ---------- */
 .layout{display:grid;grid-template-columns:1fr 350px;gap:40px;padding:48px 0 80px}
@@ -141,10 +141,10 @@ main{min-width:0}
 section{margin-bottom:56px;scroll-margin-top:130px}
 .sec-label{
   display:flex;align-items:center;gap:12px;font-size:.78rem;font-weight:700;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--terra);margin-bottom:10px;
+  text-transform:uppercase;color:var(--pink);margin-bottom:10px;
 }
-.sec-label::after{content:"";height:1px;width:48px;background:var(--terra);opacity:.5}
-h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--green-deep);margin-bottom:22px;letter-spacing:-.01em}
+.sec-label::after{content:"";height:1px;width:48px;background:var(--pink);opacity:.5}
+h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--violet-deep);margin-bottom:22px;letter-spacing:-.01em}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
 
 /* about */
@@ -153,7 +153,7 @@ h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--green-deep);ma
 .pull{
   margin:22px 0;padding:20px 26px;border-left:4px solid var(--gold);background:#fff;
   border-radius:0 var(--radius) var(--radius) 0;font-family:'Fraunces',serif;font-style:italic;
-  font-size:1.12rem;color:var(--green-deep);box-shadow:var(--shadow);
+  font-size:1.12rem;color:var(--violet-deep);box-shadow:var(--shadow);
 }
 
 /* expertise grid */
@@ -161,10 +161,10 @@ h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--green-deep);ma
 .exp-card{padding:22px 22px 20px;transition:.25s}
 .exp-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
 .exp-card .ico{
-  width:42px;height:42px;border-radius:12px;background:var(--green-tint);display:grid;place-items:center;
+  width:42px;height:42px;border-radius:12px;background:var(--violet-tint);display:grid;place-items:center;
   font-size:1.2rem;margin-bottom:12px;
 }
-.exp-card h3{font-size:1.05rem;font-weight:600;color:var(--green-deep);margin-bottom:6px}
+.exp-card h3{font-size:1.05rem;font-weight:600;color:var(--violet-deep);margin-bottom:6px}
 .exp-card p{font-size:.9rem;color:var(--ink-soft)}
 
 /* services */
@@ -172,13 +172,13 @@ h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--green-deep);ma
 .svc-card{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:24px;align-items:start;transition:.25s}
 .svc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
 .svc-num{
-  font-family:'Fraunces',serif;font-size:2rem;font-weight:600;color:var(--terra);
-  width:64px;height:64px;border-radius:16px;background:var(--terra-soft);display:grid;place-items:center;
+  font-family:'Fraunces',serif;font-size:2rem;font-weight:600;color:var(--pink);
+  width:64px;height:64px;border-radius:16px;background:var(--pink-soft);display:grid;place-items:center;
 }
-.svc-card h3{font-size:1.15rem;font-weight:600;color:var(--green-deep);margin-bottom:6px}
+.svc-card h3{font-size:1.15rem;font-weight:600;color:var(--violet-deep);margin-bottom:6px}
 .svc-card p{font-size:.94rem;color:var(--ink-soft)}
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
-.tag{font-size:.76rem;font-weight:700;color:var(--green);background:var(--green-tint);border-radius:999px;padding:4px 12px}
+.tag{font-size:.76rem;font-weight:700;color:var(--violet);background:var(--violet-tint);border-radius:999px;padding:4px 12px}
 
 /* approach timeline */
 .steps{position:relative;display:grid;gap:0}
@@ -189,16 +189,16 @@ h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--green-deep);ma
 }
 .step:last-child::before{display:none}
 .step-n{
-  width:56px;height:56px;border-radius:50%;background:#fff;border:2px solid var(--green);
-  display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;color:var(--green);
+  width:56px;height:56px;border-radius:50%;background:#fff;border:2px solid var(--violet);
+  display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;color:var(--violet);
   box-shadow:var(--shadow);z-index:1;
 }
-.step h3{font-size:1.08rem;font-weight:600;color:var(--green-deep);padding-top:4px}
+.step h3{font-size:1.08rem;font-weight:600;color:var(--violet-deep);padding-top:4px}
 .step p{font-size:.94rem;color:var(--ink-soft);margin-top:3px}
 
 /* journey strip */
 .journey{
-  display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--green-deep);color:#EAF2EA;
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--violet-deep);color:#EAF2EA;
   border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow-lg);
 }
 .journey b{font-family:'Fraunces',serif;font-weight:500;font-size:.98rem;white-space:nowrap}
@@ -211,16 +211,16 @@ h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--green-deep);ma
 .edu-item::before{content:"";position:absolute;left:6px;top:18px;bottom:0;width:2px;background:var(--line)}
 .edu-item:last-child{padding-bottom:0}
 .edu-item:last-child::before{display:none}
-.edu-dot{width:14px;height:14px;border-radius:50%;background:var(--terra);margin-top:5px;box-shadow:0 0 0 4px var(--terra-soft)}
-.edu-item h3{font-size:1.05rem;font-weight:600;color:var(--green-deep)}
-.edu-item .where{font-size:.88rem;font-weight:700;color:var(--terra);margin:2px 0 5px}
+.edu-dot{width:14px;height:14px;border-radius:50%;background:var(--pink);margin-top:5px;box-shadow:0 0 0 4px var(--pink-soft)}
+.edu-item h3{font-size:1.05rem;font-weight:600;color:var(--violet-deep)}
+.edu-item .where{font-size:.88rem;font-weight:700;color:var(--pink);margin:2px 0 5px}
 .edu-item p{font-size:.92rem;color:var(--ink-soft)}
 .edu-item ul{margin:8px 0 0 18px;font-size:.9rem;color:var(--ink-soft)}
 .edu-item ul li{margin-bottom:3px}
 
 /* philosophy */
 .philo{
-  position:relative;background:linear-gradient(140deg,var(--green-deep),#2F5743);color:#F2F6EF;
+  position:relative;background:linear-gradient(140deg,var(--violet-deep),#5C3F86);color:#F6F1FA;
   border-radius:24px;padding:44px 40px;overflow:hidden;box-shadow:var(--shadow-lg);
 }
 .philo::before{
@@ -235,21 +235,21 @@ h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--green-deep);ma
 .why{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .why-item{display:flex;gap:13px;padding:18px 20px;align-items:flex-start}
 .check{
-  flex:none;width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;
+  flex:none;width:26px;height:26px;border-radius:50%;background:var(--violet);color:#fff;
   display:grid;place-items:center;font-size:.75rem;margin-top:2px;
 }
-.why-item b{display:block;color:var(--green-deep);font-size:.98rem}
+.why-item b{display:block;color:var(--violet-deep);font-size:.98rem}
 .why-item span{font-size:.88rem;color:var(--ink-soft)}
 
 /* faq */
 .faq details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;box-shadow:var(--shadow)}
 .faq summary{
-  list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;font-size:.98rem;color:var(--green-deep);
+  list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;font-size:.98rem;color:var(--violet-deep);
   display:flex;justify-content:space-between;align-items:center;gap:14px;transition:.2s;
 }
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{
-  content:"+";font-family:'Fraunces',serif;font-size:1.4rem;color:var(--terra);
+  content:"+";font-family:'Fraunces',serif;font-size:1.4rem;color:var(--pink);
   transition:.25s;line-height:1;flex:none;
 }
 .faq details[open] summary::after{transform:rotate(45deg)}
@@ -266,12 +266,12 @@ h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--green-deep);ma
 /* ---------- sidebar booking card ---------- */
 aside{position:relative}
 .book{position:sticky;top:130px;display:grid;gap:16px}
-.book-card{padding:26px;border-top:5px solid var(--terra)}
-.book-card h3{font-size:1.2rem;font-weight:600;color:var(--green-deep);margin-bottom:4px}
+.book-card{padding:26px;border-top:5px solid var(--pink)}
+.book-card h3{font-size:1.2rem;font-weight:600;color:var(--violet-deep);margin-bottom:4px}
 .book-card .sub{font-size:.86rem;color:var(--ink-soft);margin-bottom:16px}
 .book-row{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-top:1px solid var(--cream-2);font-size:.9rem}
 .book-row:first-of-type{border-top:none}
-.book-row .ic{flex:none;width:34px;height:34px;border-radius:10px;background:var(--green-tint);display:grid;place-items:center;font-size:1rem}
+.book-row .ic{flex:none;width:34px;height:34px;border-radius:10px;background:var(--violet-tint);display:grid;place-items:center;font-size:1rem}
 .book-row b{display:block;color:var(--ink);font-size:.9rem}
 .book-row span{color:var(--ink-soft);font-size:.84rem}
 .book-card .btn{width:100%;justify-content:center;margin-top:14px}
@@ -287,7 +287,7 @@ aside{position:relative}
 .mobile-cta .btn{flex:1;justify-content:center;padding:13px 10px;font-size:.9rem}
 
 /* footer */
-footer{background:var(--green-deep);color:#B9CBBA;padding:34px 0;font-size:.85rem}
+footer{background:var(--violet-deep);color:#B9CBBA;padding:34px 0;font-size:.85rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
 footer b{color:#fff;font-family:'Fraunces',serif;font-weight:500;font-size:1rem}
 
@@ -321,7 +321,7 @@ html.js .reveal.in{opacity:1;transform:none}
 <header class="topbar">
   <div class="wrap">
     <a class="brand" href="#top">
-      <span class="leaf">🌿</span> Dt.&nbsp;Soujanya
+      <span class="leaf">🌸</span> Dt.&nbsp;Soujanya
     </a>
     <a class="top-cta" href="#book">Book Consultation</a>
   </div>
@@ -335,7 +335,7 @@ html.js .reveal.in{opacity:1;transform:none}
       <!-- EDIT-ME: replace this div with an <img> tag to show her photo -->
       <div class="photo">DS</div>
       <div class="verified">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#2C523F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#2C523F" stroke-width="2"/></svg>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#6C4E9B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#6C4E9B" stroke-width="2"/></svg>
         Profile Verified
       </div>
     </div>
@@ -388,7 +388,7 @@ html.js .reveal.in{opacity:1;transform:none}
   <!-- ABOUT -->
   <section id="info" class="about reveal">
     <div class="sec-label">About</div>
-    <h2>Nutrition care that fits <em style="color:var(--terra)">your</em> life</h2>
+    <h2>Nutrition care that fits <em style="color:var(--pink)">your</em> life</h2>
     <p>I am <strong>Dt. Soujanya</strong>, a Clinical Nutritionist &amp; Dietitian based in Hyderabad, with a Master's degree in Clinical Nutrition &amp; Dietetics and over 3 years of professional experience. I have been in professional clinical practice as a Clinical Nutritionist &amp; Dietitian since 2023.</p>
     <p>My professional experience includes providing personalized nutrition and dietary guidance for individuals with diverse health and lifestyle goals — including weight management, PCOD, thyroid-related nutrition, and nutrition support in cancer, kidney, liver, and post-CABG care — within my professional scope and as part of a broader healthcare approach.</p>
     <div class="pull">Effective nutrition care goes beyond simply giving a diet chart. It requires understanding a person's health needs, lifestyle, food preferences, routine, cultural background, and ability to follow recommendations consistently.</div>
@@ -552,7 +552,7 @@ html.js .reveal.in{opacity:1;transform:none}
     </details>
     <details>
       <summary>How do I book a consultation?</summary>
-      <div class="a">Use the <a href="#book" style="color:var(--terra);font-weight:700">Book a Consultation</a> button on this page to reach out via WhatsApp or phone. You'll receive a confirmation with the available time slots.</div>
+      <div class="a">Use the <a href="#book" style="color:var(--pink);font-weight:700">Book a Consultation</a> button on this page to reach out via WhatsApp or phone. You'll receive a confirmation with the available time slots.</div>
     </details>
     <details>
       <summary>Who can consult with her?</summary>
