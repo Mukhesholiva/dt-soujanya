@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dt. Soujanya — Clinical Nutritionist &amp; Dietitian | Hyderabad</title>
+<meta name="description" content="Dt. Soujanya is a Clinical Nutritionist & Dietitian in Hyderabad with an M.Sc. in Clinical Nutrition & Dietetics and 3+ years of experience. Personalized, practical, evidence-informed nutrition care — online and in-person consultations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   EDIT CONTACT DETAILS:
+   Search this file for "EDIT-ME" to update phone, WhatsApp,
+   email, Instagram and photo.
+   ============================================================ */
+:root{
+  --cream:#FAF6EE;
+  --cream-2:#F3EDE0;
+  --ink:#20302A;
+  --ink-soft:#4C5B53;
+  --green:#2C523F;
+  --green-deep:#1E3B2D;
+  --green-tint:#E4EDE5;
+  --terra:#D96E43;
+  --terra-soft:#F6DFD2;
+  --gold:#C9A24B;
+  --line:#E3DACA;
+  --card:#FFFFFF;
+  --radius:18px;
+  --shadow:0 10px 30px -12px rgba(32,48,42,.14);
+  --shadow-lg:0 24px 60px -20px rgba(32,48,42,.22);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:130px}
+body{
+  font-family:'Karla',sans-serif;
+  background:var(--cream);
+  color:var(--ink);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+/* subtle grain */
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.35;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.2 0 0 0 0 0.25 0 0 0 0 0.2 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+h1,h2,h3,.serif{font-family:'Fraunces',serif}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,246,238,.88);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;color:var(--green-deep)}
+.brand .leaf{width:30px;height:30px;border-radius:50% 50% 50% 4px;background:linear-gradient(135deg,var(--green),#6FA07F);display:grid;place-items:center;color:#fff;font-size:.85rem;transform:rotate(-8deg)}
+.top-cta{
+  display:inline-block;background:var(--green);color:#fff;font-weight:700;font-size:.9rem;
+  padding:10px 20px;border-radius:999px;transition:.25s;
+}
+.top-cta:hover{background:var(--green-deep);transform:translateY(-1px)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:64px 0 48px;background:
+  radial-gradient(700px 380px at 85% -10%, var(--green-tint) 0%, transparent 65%),
+  radial-gradient(520px 340px at -8% 30%, var(--terra-soft) 0%, transparent 60%);
+}
+.hero .wrap{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center}
+.portrait{position:relative;width:230px}
+.portrait .blob{
+  position:absolute;inset:-16px;border-radius:53% 47% 44% 56%/49% 55% 45% 51%;
+  background:linear-gradient(140deg,var(--green-tint),#fff 60%);
+  box-shadow:var(--shadow-lg);animation:blob 9s ease-in-out infinite alternate;
+}
+@keyframes blob{
+  0%{border-radius:53% 47% 44% 56%/49% 55% 45% 51%}
+  100%{border-radius:44% 56% 55% 45%/55% 44% 56% 45%}
+}
+.portrait .photo{
+  position:relative;width:230px;height:230px;border-radius:50%;overflow:hidden;
+  border:5px solid #fff;box-shadow:var(--shadow);
+  background:linear-gradient(160deg,var(--green) 0%,#4E7A5F 100%);
+  display:grid;place-items:center;color:#fff;
+  font-family:'Fraunces',serif;font-size:4.2rem;font-weight:600;letter-spacing:.02em;
+}
+/* EDIT-ME: to use a real photo, replace the initials div in the HTML with:
+   <img class="photo" src="soujanya.jpg" alt="Dt. Soujanya" style="object-fit:cover"> */
+.verified{
+  position:absolute;bottom:10px;right:2px;background:#fff;border:1px solid var(--line);
+  border-radius:999px;padding:6px 12px;font-size:.72rem;font-weight:700;color:var(--green);
+  display:flex;gap:5px;align-items:center;box-shadow:var(--shadow);
+}
+.verified svg{width:13px;height:13px}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.4rem);font-weight:600;color:var(--green-deep);line-height:1.12;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero .quals{margin-top:10px;font-size:1.05rem;color:var(--ink-soft);font-weight:500}
+.hero .quals strong{color:var(--ink)}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.badge{
+  display:inline-flex;align-items:center;gap:7px;background:#fff;border:1px solid var(--line);
+  border-radius:999px;padding:7px 15px;font-size:.85rem;font-weight:600;color:var(--ink-soft);
+}
+.badge .dot{width:7px;height:7px;border-radius:50%;background:var(--terra)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:.98rem;
+  padding:14px 28px;border-radius:999px;transition:.25s;cursor:pointer;border:none;
+}
+.btn-solid{background:var(--terra);color:#fff;box-shadow:0 8px 22px -8px rgba(217,110,67,.55)}
+.btn-solid:hover{background:#C05A31;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--green);border:2px solid var(--green)}
+.btn-ghost:hover{background:var(--green);color:#fff}
+
+/* stat strip */
+.stats{border-block:1px solid var(--line);background:var(--cream-2)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center}
+.stat{padding:22px 12px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:none}
+.stat b{display:block;font-family:'Fraunces',serif;font-size:1.7rem;font-weight:600;color:var(--green-deep)}
+.stat span{font-size:.82rem;color:var(--ink-soft);font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+
+/* ---------- section nav (Practo-style tabs) ---------- */
+.tabs{position:sticky;top:64px;z-index:40;background:rgba(250,246,238,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.tabs .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.tabs .wrap::-webkit-scrollbar{display:none}
+.tab{
+  padding:15px 18px;font-weight:700;font-size:.92rem;color:var(--ink-soft);white-space:nowrap;
+  border-bottom:3px solid transparent;transition:.2s;
+}
+.tab:hover{color:var(--green)}
+.tab.active{color:var(--green-deep);border-bottom-color:var(--terra)}
+
+/* ---------- main layout ---------- */
+.layout{display:grid;grid-template-columns:1fr 350px;gap:40px;padding:48px 0 80px}
+main{min-width:0}
+section{margin-bottom:56px;scroll-margin-top:130px}
+.sec-label{
+  display:flex;align-items:center;gap:12px;font-size:.78rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--terra);margin-bottom:10px;
+}
+.sec-label::after{content:"";height:1px;width:48px;background:var(--terra);opacity:.5}
+h2{font-size:clamp(1.5rem,2.6vw,2rem);font-weight:600;color:var(--green-deep);margin-bottom:22px;letter-spacing:-.01em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* about */
+.about p{margin-bottom:14px;color:var(--ink-soft);font-size:1.02rem}
+.about p strong{color:var(--ink)}
+.pull{
+  margin:22px 0;padding:20px 26px;border-left:4px solid var(--gold);background:#fff;
+  border-radius:0 var(--radius) var(--radius) 0;font-family:'Fraunces',serif;font-style:italic;
+  font-size:1.12rem;color:var(--green-deep);box-shadow:var(--shadow);
+}
+
+/* expertise grid */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.exp-card{padding:22px 22px 20px;transition:.25s}
+.exp-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.exp-card .ico{
+  width:42px;height:42px;border-radius:12px;background:var(--green-tint);display:grid;place-items:center;
+  font-size:1.2rem;margin-bottom:12px;
+}
+.exp-card h3{font-size:1.05rem;font-weight:600;color:var(--green-deep);margin-bottom:6px}
+.exp-card p{font-size:.9rem;color:var(--ink-soft)}
+
+/* services */
+.svc{display:grid;gap:16px}
+.svc-card{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:24px;align-items:start;transition:.25s}
+.svc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.svc-num{
+  font-family:'Fraunces',serif;font-size:2rem;font-weight:600;color:var(--terra);
+  width:64px;height:64px;border-radius:16px;background:var(--terra-soft);display:grid;place-items:center;
+}
+.svc-card h3{font-size:1.15rem;font-weight:600;color:var(--green-deep);margin-bottom:6px}
+.svc-card p{font-size:.94rem;color:var(--ink-soft)}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.tag{font-size:.76rem;font-weight:700;color:var(--green);background:var(--green-tint);border-radius:999px;padding:4px 12px}
+
+/* approach timeline */
+.steps{position:relative;display:grid;gap:0}
+.step{display:grid;grid-template-columns:56px 1fr;gap:20px;position:relative;padding-bottom:26px}
+.step::before{
+  content:"";position:absolute;left:27px;top:52px;bottom:4px;width:2px;
+  background:repeating-linear-gradient(to bottom,var(--line) 0 6px,transparent 6px 12px);
+}
+.step:last-child::before{display:none}
+.step-n{
+  width:56px;height:56px;border-radius:50%;background:#fff;border:2px solid var(--green);
+  display:grid;place-items:center;font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;color:var(--green);
+  box-shadow:var(--shadow);z-index:1;
+}
+.step h3{font-size:1.08rem;font-weight:600;color:var(--green-deep);padding-top:4px}
+.step p{font-size:.94rem;color:var(--ink-soft);margin-top:3px}
+
+/* journey strip */
+.journey{
+  display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--green-deep);color:#EAF2EA;
+  border-radius:var(--radius);padding:26px 28px;box-shadow:var(--shadow-lg);
+}
+.journey b{font-family:'Fraunces',serif;font-weight:500;font-size:.98rem;white-space:nowrap}
+.journey .arr{color:var(--gold);font-size:.9rem}
+
+/* education + experience */
+.timeline-card{padding:26px}
+.edu{display:grid;gap:0}
+.edu-item{display:grid;grid-template-columns:14px 1fr;gap:18px;position:relative;padding-bottom:24px}
+.edu-item::before{content:"";position:absolute;left:6px;top:18px;bottom:0;width:2px;background:var(--line)}
+.edu-item:last-child{padding-bottom:0}
+.edu-item:last-child::before{display:none}
+.edu-dot{width:14px;height:14px;border-radius:50%;background:var(--terra);margin-top:5px;box-shadow:0 0 0 4px var(--terra-soft)}
+.edu-item h3{font-size:1.05rem;font-weight:600;color:var(--green-deep)}
+.edu-item .where{font-size:.88rem;font-weight:700;color:var(--terra);margin:2px 0 5px}
+.edu-item p{font-size:.92rem;color:var(--ink-soft)}
+.edu-item ul{margin:8px 0 0 18px;font-size:.9rem;color:var(--ink-soft)}
+.edu-item ul li{margin-bottom:3px}
+
+/* philosophy */
+.philo{
+  position:relative;background:linear-gradient(140deg,var(--green-deep),#2F5743);color:#F2F6EF;
+  border-radius:24px;padding:44px 40px;overflow:hidden;box-shadow:var(--shadow-lg);
+}
+.philo::before{
+  content:"“";position:absolute;top:-30px;left:18px;font-family:'Fraunces',serif;
+  font-size:11rem;color:rgba(255,255,255,.08);line-height:1;
+}
+.philo blockquote{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.25rem,2.4vw,1.6rem);line-height:1.5;font-weight:400}
+.philo p{margin-top:16px;color:#C9D8C8;font-size:.98rem}
+.philo .sig{margin-top:20px;font-family:'Fraunces',serif;color:var(--gold);font-size:1.05rem}
+
+/* why me checklist */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.why-item{display:flex;gap:13px;padding:18px 20px;align-items:flex-start}
+.check{
+  flex:none;width:26px;height:26px;border-radius:50%;background:var(--green);color:#fff;
+  display:grid;place-items:center;font-size:.75rem;margin-top:2px;
+}
+.why-item b{display:block;color:var(--green-deep);font-size:.98rem}
+.why-item span{font-size:.88rem;color:var(--ink-soft)}
+
+/* faq */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;box-shadow:var(--shadow)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;font-size:.98rem;color:var(--green-deep);
+  display:flex;justify-content:space-between;align-items:center;gap:14px;transition:.2s;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";font-family:'Fraunces',serif;font-size:1.4rem;color:var(--terra);
+  transition:.25s;line-height:1;flex:none;
+}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details[open] summary{background:var(--cream-2)}
+.faq .a{padding:4px 22px 20px;font-size:.94rem;color:var(--ink-soft)}
+
+/* disclaimer */
+.note{
+  border:1px dashed var(--gold);background:#FDF9EF;border-radius:var(--radius);
+  padding:22px 26px;font-size:.88rem;color:var(--ink-soft);
+}
+.note b{color:var(--ink)}
+
+/* ---------- sidebar booking card ---------- */
+aside{position:relative}
+.book{position:sticky;top:130px;display:grid;gap:16px}
+.book-card{padding:26px;border-top:5px solid var(--terra)}
+.book-card h3{font-size:1.2rem;font-weight:600;color:var(--green-deep);margin-bottom:4px}
+.book-card .sub{font-size:.86rem;color:var(--ink-soft);margin-bottom:16px}
+.book-row{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-top:1px solid var(--cream-2);font-size:.9rem}
+.book-row:first-of-type{border-top:none}
+.book-row .ic{flex:none;width:34px;height:34px;border-radius:10px;background:var(--green-tint);display:grid;place-items:center;font-size:1rem}
+.book-row b{display:block;color:var(--ink);font-size:.9rem}
+.book-row span{color:var(--ink-soft);font-size:.84rem}
+.book-card .btn{width:100%;justify-content:center;margin-top:14px}
+.wa{background:#1FA855;color:#fff;box-shadow:0 8px 22px -8px rgba(31,168,85,.5)}
+.wa:hover{background:#178A45;transform:translateY(-2px)}
+.mini-note{font-size:.78rem;color:var(--ink-soft);text-align:center}
+
+/* mobile bottom bar */
+.mobile-cta{
+  display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;
+  border-top:1px solid var(--line);padding:12px 16px;gap:10px;box-shadow:0 -8px 30px rgba(32,48,42,.12);
+}
+.mobile-cta .btn{flex:1;justify-content:center;padding:13px 10px;font-size:.9rem}
+
+/* footer */
+footer{background:var(--green-deep);color:#B9CBBA;padding:34px 0;font-size:.85rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+footer b{color:#fff;font-family:'Fraunces',serif;font-weight:500;font-size:1rem}
+
+/* reveal animation (hidden state only applies when JS is running) */
+.reveal{transition:opacity .7s ease,transform .7s ease}
+html.js .reveal{opacity:0;transform:translateY(22px)}
+html.js .reveal.in{opacity:1;transform:none}
+.hero .reveal{transition-delay:calc(var(--d,0)*90ms)}
+
+/* ---------- responsive ---------- */
+@media(max-width:960px){
+  .layout{grid-template-columns:1fr}
+  aside .book{position:static}
+  .hero .wrap{grid-template-columns:1fr;text-align:center;gap:30px}
+  .portrait{margin:0 auto}
+  .badges,.hero-ctas{justify-content:center}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:none}
+  .stat{border-top:1px solid var(--line)}
+  .stat:nth-child(-n+2){border-top:none}
+  .grid-2,.why{grid-template-columns:1fr}
+  .mobile-cta{display:flex}
+  body{padding-bottom:70px}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<!-- ================= TOP BAR ================= -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="leaf">🌿</span> Dt.&nbsp;Soujanya
+    </a>
+    <a class="top-cta" href="#book">Book Consultation</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="portrait reveal" style="--d:0">
+      <div class="blob"></div>
+      <!-- EDIT-ME: replace this div with an <img> tag to show her photo -->
+      <div class="photo">DS</div>
+      <div class="verified">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4" stroke="#2C523F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="#2C523F" stroke-width="2"/></svg>
+        Profile Verified
+      </div>
+    </div>
+    <div>
+      <h1 class="reveal" style="--d:1">Dt. Soujanya<br><em>Clinical Nutritionist &amp; Dietitian</em></h1>
+      <p class="quals reveal" style="--d:2">
+        <strong>M.Sc. Clinical Nutrition &amp; Dietetics</strong> (Osmania University affiliated) ·
+        Clinical Nutritionist &amp; Dietitian · Hyderabad, Telangana
+      </p>
+      <div class="badges reveal" style="--d:3">
+        <span class="badge"><span class="dot"></span>3+ Years Experience</span>
+        <span class="badge"><span class="dot"></span>Telugu · English · Hindi</span>
+        <span class="badge"><span class="dot"></span>Online Consultations</span>
+        <span class="badge"><span class="dot"></span>In-person Consultations</span>
+      </div>
+      <div class="hero-ctas reveal" style="--d:4">
+        <a class="btn btn-solid" href="#book">Book a Consultation →</a>
+        <a class="btn btn-ghost" href="#services">Explore Services</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= STATS ================= -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>3+</b><span>Years Experience</span></div>
+    <div class="stat"><b>9</b><span>Areas of Expertise</span></div>
+    <div class="stat"><b>3</b><span>Languages</span></div>
+    <div class="stat"><b>2</b><span>Consultation Modes</span></div>
+  </div>
+</div>
+
+<!-- ================= SECTION TABS ================= -->
+<nav class="tabs">
+  <div class="wrap">
+    <a class="tab active" href="#info">Info</a>
+    <a class="tab" href="#expertise">Expertise</a>
+    <a class="tab" href="#services">Services</a>
+    <a class="tab" href="#approach">My Approach</a>
+    <a class="tab" href="#education">Education &amp; Experience</a>
+    <a class="tab" href="#faq">FAQ</a>
+  </div>
+</nav>
+
+<!-- ================= LAYOUT ================= -->
+<div class="wrap layout">
+<main>
+
+  <!-- ABOUT -->
+  <section id="info" class="about reveal">
+    <div class="sec-label">About</div>
+    <h2>Nutrition care that fits <em style="color:var(--terra)">your</em> life</h2>
+    <p>I am <strong>Dt. Soujanya</strong>, a Clinical Nutritionist &amp; Dietitian based in Hyderabad, with a Master's degree in Clinical Nutrition &amp; Dietetics and over 3 years of professional experience. I have been in professional clinical practice as a Clinical Nutritionist &amp; Dietitian since 2023.</p>
+    <p>My professional experience includes providing personalized nutrition and dietary guidance for individuals with diverse health and lifestyle goals — including weight management, PCOD, thyroid-related nutrition, and nutrition support in cancer, kidney, liver, and post-CABG care — within my professional scope and as part of a broader healthcare approach.</p>
+    <div class="pull">Effective nutrition care goes beyond simply giving a diet chart. It requires understanding a person's health needs, lifestyle, food preferences, routine, cultural background, and ability to follow recommendations consistently.</div>
+    <p>My goal is to make nutrition <strong>personalized, practical, evidence-informed, and sustainable</strong>.</p>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section id="expertise" class="reveal">
+    <div class="sec-label">Areas of Expertise</div>
+    <h2>What I can help you with</h2>
+    <div class="grid-2">
+      <div class="card exp-card"><div class="ico">⚖️</div><h3>Weight Management</h3><p>Personalized strategies designed around your lifestyle, dietary preferences, activity levels, and long-term goals — sustainable habits, not extreme restriction.</p></div>
+      <div class="card exp-card"><div class="ico">🌱</div><h3>Healthy Weight Gain</h3><p>Improving dietary quality, meal planning, and adequate energy intake for sustainable, healthy weight gain according to individual requirements.</p></div>
+      <div class="card exp-card"><div class="ico">🌸</div><h3>PCOD Nutrition</h3><p>Nutrition and lifestyle guidance for dietary habits associated with PCOD, personalized and coordinated with appropriate medical care when required.</p></div>
+      <div class="card exp-card"><div class="ico">🦋</div><h3>Thyroid-Related Nutrition</h3><p>Personalized dietary and lifestyle guidance for thyroid-related health concerns, provided alongside appropriate medical care.</p></div>
+      <div class="card exp-card"><div class="ico">🎗️</div><h3>Cancer Nutrition Support</h3><p>Dietary recommendations tailored to individual nutritional needs, treatment circumstances, tolerance, and healthcare guidance during cancer-related care.</p></div>
+      <div class="card exp-card"><div class="ico">💧</div><h3>Kidney-Related Nutrition</h3><p>Individualized guidance for kidney-related nutritional requirements, considering your clinical situation and your healthcare team's recommendations.</p></div>
+      <div class="card exp-card"><div class="ico">🍃</div><h3>Liver-Related Nutrition</h3><p>Dietary guidance designed around individual nutritional requirements and clinical circumstances for liver-related nutrition support.</p></div>
+      <div class="card exp-card"><div class="ico">❤️</div><h3>Post-CABG Nutrition</h3><p>Nutrition and lifestyle guidance after coronary artery bypass grafting, focused on cardiovascular-supportive habits in coordination with medical care.</p></div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="reveal">
+    <div class="sec-label">Services</div>
+    <h2>Consultations &amp; programs</h2>
+    <div class="svc">
+      <div class="card svc-card">
+        <div class="svc-num">01</div>
+        <div>
+          <h3>Personalized Nutrition Consultation</h3>
+          <p>Nutrition assessment, dietary pattern review, lifestyle assessment, goal setting, personalized recommendations, practical meal guidance, nutrition education, and follow-up recommendations.</p>
+          <div class="tags"><span class="tag">Assessment</span><span class="tag">Goal Setting</span><span class="tag">Meal Guidance</span></div>
+        </div>
+      </div>
+      <div class="card svc-card">
+        <div class="svc-num">02</div>
+        <div>
+          <h3>Weight Management Program</h3>
+          <p>Initial assessment, personalized nutrition plan, meal guidance, food alternatives, portion guidance, follow-ups, progress monitoring, plan modifications, and lifestyle education.</p>
+          <div class="tags"><span class="tag">Personal Plan</span><span class="tag">Progress Tracking</span><span class="tag">Follow-ups</span></div>
+        </div>
+      </div>
+      <div class="card svc-card">
+        <div class="svc-num">03</div>
+        <div>
+          <h3>Clinical Nutrition Support</h3>
+          <p>PCOD, thyroid, cancer, kidney, liver, and post-CABG nutrition support. Services are individualized, provided within professional scope, and coordinated with your medical team where appropriate.</p>
+          <div class="tags"><span class="tag">PCOD</span><span class="tag">Thyroid</span><span class="tag">Cancer</span><span class="tag">Kidney</span><span class="tag">Liver</span><span class="tag">Post-CABG</span></div>
+        </div>
+      </div>
+      <div class="card svc-card">
+        <div class="svc-num">04</div>
+        <div>
+          <h3>Lifestyle Nutrition</h3>
+          <p>Eating habits, meal balance, food choices, portion awareness, daily nutrition, and lifestyle habits — for anyone who simply wants to eat better, every day.</p>
+          <div class="tags"><span class="tag">Balanced Eating</span><span class="tag">Daily Habits</span><span class="tag">Food Choices</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH -->
+  <section id="approach" class="reveal">
+    <div class="sec-label">My Approach</div>
+    <h2>Six steps, one goal: habits that last</h2>
+    <div class="steps">
+      <div class="step"><div class="step-n">01</div><div><h3>Listen</h3><p>Every consultation begins by understanding you — lifestyle, food preferences, daily routine, eating patterns, health history, activity levels, goals, and practical challenges.</p></div></div>
+      <div class="step"><div class="step-n">02</div><div><h3>Assess</h3><p>I evaluate existing dietary habits and identify areas where meaningful changes can be made.</p></div></div>
+      <div class="step"><div class="step-n">03</div><div><h3>Personalize</h3><p>Instead of giving the same diet to everyone, I develop recommendations based on your nutritional needs and lifestyle.</p></div></div>
+      <div class="step"><div class="step-n">04</div><div><h3>Educate</h3><p>You should understand <em>why</em> you are making a dietary change — knowledge makes change stick.</p></div></div>
+      <div class="step"><div class="step-n">05</div><div><h3>Support</h3><p>Regular follow-ups help identify challenges, monitor progress, and make appropriate adjustments.</p></div></div>
+      <div class="step"><div class="step-n">06</div><div><h3>Sustain</h3><p>The goal is to create habits that continue beyond the diet plan.</p></div></div>
+    </div>
+    <div class="journey" style="margin-top:26px">
+      <b>Initial Consultation</b><span class="arr">→</span>
+      <b>Nutrition Assessment</b><span class="arr">→</span>
+      <b>Personalized Plan</b><span class="arr">→</span>
+      <b>Implementation</b><span class="arr">→</span>
+      <b>Follow-up</b><span class="arr">→</span>
+      <b>Sustainable Habits</b>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section class="reveal">
+    <div class="philo">
+      <blockquote>A healthy diet is not about perfection. It is about making better choices consistently and creating habits that fit your life.</blockquote>
+      <p>Nutrition should not feel like punishment. It should help you understand your body, improve your relationship with food, and make healthier choices with confidence.</p>
+      <div class="sig">— Dt. Soujanya</div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & EXPERIENCE -->
+  <section id="education" class="reveal">
+    <div class="sec-label">Background</div>
+    <h2>Education &amp; experience</h2>
+    <div class="card timeline-card">
+      <div class="edu">
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div>
+            <h3>Clinical Nutritionist &amp; Dietitian — Clinical Practice</h3>
+            <div class="where">2023 – Present · Hyderabad</div>
+            <p>Individualized nutrition guidance, dietary planning, counselling, lifestyle support, and follow-up based on each client's nutritional requirements and goals.</p>
+            <ul>
+              <li>Weight management &amp; healthy weight gain</li>
+              <li>PCOD and thyroid-related nutrition</li>
+              <li>Cancer, kidney, liver &amp; post-CABG nutrition support</li>
+              <li>General lifestyle and healthy-eating goals</li>
+            </ul>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div>
+            <h3>Clinical Intern — KIMS Hospital</h3>
+            <div class="where">Secunderabad</div>
+            <p>Hospital-based clinical nutrition exposure: clinical nutrition assessment, therapeutic diet planning, hospital nutrition practices, patient counselling, dietary modifications, and multidisciplinary healthcare environments.</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div>
+            <h3>M.Sc. Clinical Nutrition &amp; Dietetics</h3>
+            <div class="where">Jahnavi PG College, Nallakunta · Affiliated with Osmania University</div>
+            <p>Advanced academic and practical exposure to clinical nutrition, dietetics, therapeutic nutrition, nutritional assessment, dietary planning, and nutrition counselling.</p>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div>
+            <h3>Bachelor's Degree</h3>
+            <div class="where">Madina Degree College, Himayatnagar</div>
+            <p>The foundation of my professional journey in nutrition and dietetics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ME -->
+  <section class="reveal">
+    <div class="sec-label">Why Work With Me</div>
+    <h2>Care that starts with listening</h2>
+    <div class="why">
+      <div class="card why-item"><div class="check">✓</div><div><b>Clinical Experience</b><span>3+ years of professional experience plus hospital internship exposure — academic knowledge with practical application.</span></div></div>
+      <div class="card why-item"><div class="check">✓</div><div><b>Personalized Care</b><span>Your plan fits your lifestyle, preferences, routine, and nutritional requirements.</span></div></div>
+      <div class="card why-item"><div class="check">✓</div><div><b>Practical Approach</b><span>Recommendations that can realistically be incorporated into everyday life.</span></div></div>
+      <div class="card why-item"><div class="check">✓</div><div><b>Multilingual</b><span>Consultations in Telugu, English, and Hindi — whichever you're most comfortable in.</span></div></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq reveal">
+    <div class="sec-label">FAQ</div>
+    <h2>Frequently asked questions</h2>
+    <details open>
+      <summary>Where does Dt. Soujanya practice?</summary>
+      <div class="a">Dt. Soujanya practices in Hyderabad, Telangana as a Clinical Nutritionist &amp; Dietitian. Online consultations are available, and in-person consultations are subject to availability.</div>
+    </details>
+    <details>
+      <summary>How do I book a consultation?</summary>
+      <div class="a">Use the <a href="#book" style="color:var(--terra);font-weight:700">Book a Consultation</a> button on this page to reach out via WhatsApp or phone. You'll receive a confirmation with the available time slots.</div>
+    </details>
+    <details>
+      <summary>Who can consult with her?</summary>
+      <div class="a">Anyone seeking healthy weight management or weight gain, PCOD or thyroid-related nutrition support, clinical nutrition support (cancer, kidney, liver, post-CABG), lifestyle improvement, balanced eating, personalized meal planning, or long-term nutrition habits.</div>
+    </details>
+    <details>
+      <summary>What are her qualifications?</summary>
+      <div class="a">She holds an M.Sc. in Clinical Nutrition &amp; Dietetics (Jahnavi PG College, affiliated with Osmania University) and completed her clinical internship at KIMS Hospital, Secunderabad. She has over 3 years of professional experience.</div>
+    </details>
+    <details>
+      <summary>Which languages does she speak?</summary>
+      <div class="a">Telugu (fluent), English (fluent), and Hindi (fluent).</div>
+    </details>
+    <details>
+      <summary>Does nutrition guidance replace medical treatment?</summary>
+      <div class="a">No. Nutrition guidance does not replace medical diagnosis or treatment. Clients with medical conditions should continue appropriate medical care; where required, nutrition care is coordinated with their healthcare team.</div>
+    </details>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section class="reveal">
+    <div class="note">
+      <b>Professional Note:</b> Nutrition services are provided according to individual nutritional requirements and within professional qualifications and scope of practice. Nutrition guidance does not replace medical diagnosis or treatment. Clients with medical conditions should continue appropriate medical care and, where required, nutrition care may be coordinated with their healthcare team.
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= SIDEBAR ================= -->
+<aside>
+  <div class="book" id="book">
+    <div class="card book-card">
+      <h3>Start Your Nutrition Journey</h3>
+      <div class="sub">Personalized · Practical · Evidence-Informed · Sustainable</div>
+      <div class="book-row"><div class="ic">📍</div><div><b>Hyderabad, Telangana</b><span>In-person subject to availability</span></div></div>
+      <div class="book-row"><div class="ic">💻</div><div><b>Online Consultations</b><span>Video / phone consultations available</span></div></div>
+      <div class="book-row"><div class="ic">🗣️</div><div><b>Telugu · English · Hindi</b><span>Consult in your preferred language</span></div></div>
+      <!-- EDIT-ME: replace 91XXXXXXXXXX with the real WhatsApp number -->
+      <a class="btn wa" href="https://wa.me/91XXXXXXXXXX?text=Hi%20Dt.%20Soujanya%2C%20I%20would%20like%20to%20book%20a%20nutrition%20consultation.">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.53 15.2L2 22l4.96-1.43A10 10 0 1 0 12 2Zm5.07 14.13c-.22.6-1.26 1.15-1.76 1.19-.47.04-1.05.19-3.53-.74-2.98-1.17-4.9-4.2-5.05-4.4-.15-.2-1.21-1.61-1.21-3.07 0-1.46.77-2.18 1.04-2.48.27-.3.6-.37.8-.37h.57c.19 0 .44-.07.68.52.25.6.84 2.06.91 2.21.08.15.13.33.03.53-.1.2-.15.32-.3.5-.15.17-.32.39-.45.52-.15.15-.31.31-.13.61.18.3.79 1.3 1.7 2.11 1.17 1.04 2.15 1.36 2.46 1.51.3.15.48.13.66-.08.18-.2.76-.88.96-1.18.2-.3.4-.25.68-.15.27.1 1.73.81 2.03.96.3.15.5.22.57.35.07.12.07.72-.15 1.32Z"/></svg>
+        WhatsApp to Book
+      </a>
+      <!-- EDIT-ME: replace with the real phone number -->
+      <a class="btn btn-ghost" style="width:100%;justify-content:center;margin-top:10px" href="tel:+91XXXXXXXXXX">📞 Call for Appointment</a>
+      <p class="mini-note" style="margin-top:12px">Your health goals are personal.<br>Your nutrition plan should be personal too.</p>
+    </div>
+    <div class="card book-card" style="border-top-color:var(--gold)">
+      <h3 style="font-size:1.02rem">Connect</h3>
+      <!-- EDIT-ME: replace # with real links / handles -->
+      <div class="book-row"><div class="ic">📸</div><div><b>Instagram</b><span><a href="#">@your.instagram.handle</a></span></div></div>
+      <div class="book-row"><div class="ic">💼</div><div><b>LinkedIn</b><span><a href="#">Your LinkedIn profile</a></span></div></div>
+      <div class="book-row"><div class="ic">✉️</div><div><b>Email</b><span><a href="mailto:your@email.com">your@email.com</a></span></div></div>
+    </div>
+  </div>
+</aside>
+</div>
+
+<!-- ================= MOBILE CTA BAR ================= -->
+<div class="mobile-cta">
+  <!-- EDIT-ME: same numbers as sidebar -->
+  <a class="btn wa" href="https://wa.me/91XXXXXXXXXX?text=Hi%20Dt.%20Soujanya%2C%20I%20would%20like%20to%20book%20a%20nutrition%20consultation.">WhatsApp</a>
+  <a class="btn btn-solid" href="tel:+91XXXXXXXXXX">Call to Book</a>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div><b>Dt. Soujanya</b> · Clinical Nutritionist &amp; Dietitian · Hyderabad</div>
+    <div>Personalized • Practical • Evidence-Informed • Sustainable</div>
+  </div>
+</footer>
+
+<script>
+// scroll reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// hero reveals immediately
+document.querySelectorAll('.hero .reveal').forEach(el=>el.classList.add('in'));
+
+// active tab tracking
+const tabs=[...document.querySelectorAll('.tab')];
+const secs=tabs.map(t=>document.querySelector(t.getAttribute('href'))).filter(Boolean);
+const spy=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      tabs.forEach(t=>t.classList.toggle('active',t.getAttribute('href')==='#'+e.target.id));
+    }
+  });
+},{rootMargin:'-35% 0px -55% 0px'});
+secs.forEach(s=>spy.observe(s));
+</script>
+</body>
+</html>
